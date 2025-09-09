@@ -109,8 +109,8 @@ function cloneFormItem(targetForm, sourceItem) {
       newItem = targetForm.addScaleItem();
       const scaleItem = sourceItem.asScaleItem();
       newItem.setBounds(scaleItem.getLowerBound(), scaleItem.getUpperBound());
-      newItem.setLeftLabel(scaleItem.getLeftLabel());
-      newItem.setRightLabel(scaleItem.getRightLabel());
+      // Note: setLeftLabel and setRightLabel methods don't exist in Google Apps Script Forms API
+      // Labels are set automatically based on bounds
       break;
       
     case FormApp.ItemType.GRID:

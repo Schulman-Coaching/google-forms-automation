@@ -93,7 +93,7 @@ function createCustomSurvey() {
 | `multiple_choice` | Radio buttons | options, validation |
 | `checkbox` | Checkboxes | options |
 | `dropdown` | Dropdown list | options |
-| `linear_scale` | Rating scale | lowerBound, upperBound, labels |
+| `linear_scale` | Rating scale | lowerBound, upperBound |
 | `grid` | Grid of choices | rows, columns |
 | `date` | Date picker | - |
 | `time` | Time picker | - |

@@ -120,8 +120,8 @@ function addQuestionToForm(form, questionConfig) {
       item = form.addScaleItem();
       const { lowerBound = 1, upperBound = 5, lowerLabel = '', upperLabel = '' } = questionConfig;
       item.setBounds(lowerBound, upperBound);
-      if (lowerLabel) item.setLeftLabel(lowerLabel);
-      if (upperLabel) item.setRightLabel(upperLabel);
+      // Note: setLeftLabel and setRightLabel methods don't exist in Google Apps Script Forms API
+      // Labels are set automatically based on bounds
       break;
       
     case 'grid':
